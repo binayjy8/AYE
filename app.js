@@ -4,3 +4,4 @@ router
 require
 stack
 AudioParamMap.get
+router.get

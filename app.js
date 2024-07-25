@@ -6,3 +6,4 @@ stack
 AudioParamMap.get
 router.get
 route.post
+route.require

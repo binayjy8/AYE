@@ -5,3 +5,4 @@ require
 stack
 AudioParamMap.get
 router.get
+delete.get()

@@ -4,3 +4,4 @@ Router.get
 Router.delete
 outerHeight.get
 Router.delete
+Router.post

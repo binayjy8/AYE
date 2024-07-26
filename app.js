@@ -10,3 +10,4 @@ require
 app.Router
 app.push
 app.Router
+Router.delete

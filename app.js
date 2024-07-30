@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/listing", (req, res) => {
-    res
+    res.send("")
 })
 
 app.listen(8080, () => {

@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
     res.send("Hi i'm root");
 });
 
-app.get("/listing")
+app.get("/listing", (req, res))
 
 app.listen(8080, () => {
     console.log("server is listening to the port 8080");

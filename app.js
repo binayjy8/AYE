@@ -21,8 +21,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/listing", (req, res) => {
-    res.send("This is listing file")
-})
+    res.send("This is listing file");
+});
 
 app.listen(8080, () => {
     console.log("server is listening to the port 8080");

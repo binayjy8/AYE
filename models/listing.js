@@ -6,4 +6,6 @@ const listingSchema = new Schema({
     descrition: String,
     image: String,
     price: Number,
+    location: String,
+    country: String,
 });

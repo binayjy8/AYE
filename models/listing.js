@@ -9,6 +9,7 @@ const listingSchema = new Schema({
     descrition: String,
     image: {
         type: String,
+        set: (v) => v === "" ? "default link" : v,
     },
     price: Number,
     location: String,

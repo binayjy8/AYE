@@ -22,7 +22,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/testListing", (req, res) => {
-    res.send("This is listing file");
+    let sampleListing = new Listing ({
+        title: "My new Villa",
+        descrition: "By the beach",
+        price: 2100,
+    })
 });
 
 app.listen(8080, () => {

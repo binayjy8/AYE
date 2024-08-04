@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
     res.send("Hi i'm root");
 });
 
-app.get("/listing", (req, res) => {
+app.get("/testListing", (req, res) => {
     res.send("This is listing file");
 });
 

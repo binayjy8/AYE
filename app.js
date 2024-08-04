@@ -26,7 +26,9 @@ app.get("/testListing", (req, res) => {
         title: "My new Villa",
         descrition: "By the beach",
         price: 2100,
-    })
+        location: "Sea beach, mumbai",
+        country: "India",
+    });
 });
 
 app.listen(8080, () => {

@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
     res.send("Hi i'm root");
 });
 
-app.get("/testListing", (req, res) => {
+app.get("/testListing", async (req, res) => {
     let sampleListing = new Listing ({
         title: "My new Villa",
         descrition: "By the beach",
@@ -29,6 +29,10 @@ app.get("/testListing", (req, res) => {
         location: "Sea beach, mumbai",
         country: "India",
     });
+
+    await sampleListing.save();
+    console.log("sample was saved");
+    res.send("successfull");
 });
 
 app.listen(8080, () => {

@@ -1,1 +1,5 @@
-const sampleListing = []
+const sampleListing = [
+    {
+        
+    }
+]

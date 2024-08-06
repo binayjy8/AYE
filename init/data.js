@@ -6,5 +6,8 @@ const sampleListing = [
         price: 2100,
         location: "maibu",
         country: "United States",
+    },
+    {
+        title: "Modern Loft In Downtown",
     }
 ]

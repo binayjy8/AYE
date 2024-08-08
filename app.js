@@ -26,19 +26,6 @@ app.get("/listings", async (req, res) => {
     res.render("index.ejs", {allListings});
 });
 
-// app.get("/testListing", async (req, res) => {
-//     let sampleListing = new Listing ({
-//         title: "My new Villa",
-//         descrition: "By the beach",
-//         price: 2100,
-//         location: "Sea beach, mumbai",
-//         country: "India",
-//     });
-
-//     await sampleListing.save();
-//     console.log("sample was saved");
-//     res.send("successfull");
-// });
 
 app.listen(8080, () => {
     console.log("server is listening to the port 8080");

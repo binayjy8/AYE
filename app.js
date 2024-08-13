@@ -26,6 +26,7 @@ app.get("/", (req, res) => {
     res.send("Hi i'm root");
 });
 
+app.get()
 
 //Index Route
 app.get("/listings", async (req, res) => {

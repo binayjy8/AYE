@@ -26,7 +26,6 @@ app.get("/", (req, res) => {
     res.send("Hi i'm root");
 });
 
-app.get("/")
 
 //Index Route
 app.get("/listings", async (req, res) => {
@@ -40,6 +39,9 @@ app.get("/listings/:id", async(req, res) => {
     const listing = await Listing.findById(id);
     res.render("listings/show.ejs", { listing });
 });
+
+//New Route
+app.get()
 
 app.listen(8080, () => {
     console.log("server is listening to the port 8080");

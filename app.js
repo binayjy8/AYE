@@ -53,7 +53,7 @@ app.post("/listings", async (req, res) => {
 });
 
 //Edit Route
-app.get("")
+app.get("/listings/:id/edit")
 
 app.listen(8080, () => {
     console.log("server is listening to the port 8080");

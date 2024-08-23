@@ -62,7 +62,7 @@ app.get("/listings/:id/edit", async (req, res) => {
 //Update Route
 app.get("/listings/:id", async (req, res) => {
     let { id } = req.params;
-    await
+    await Listing.findByIdAndUpdate
 });
 
 app.listen(8080, () => {

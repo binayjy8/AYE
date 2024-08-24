@@ -67,7 +67,10 @@ app.put("/listings/:id", async (req, res) => {
 });
 
 //Delete Route
-app.delete()
+app.delete("/listings/:id", (req, res) => {
+
+});
+
 app.listen(8080, () => {
     console.log("server is listening to the port 8080");
 });

@@ -67,8 +67,8 @@ app.put("/listings/:id", async (req, res) => {
 });
 
 //Delete Route
-app.delete("/listings/:id", (req, res) => {
-
+app.delete("/listings/:id", async (req, res) => {
+    let deletedListing = await Listing.findByIdAndDelete(id);
 });
 
 app.listen(8080, () => {

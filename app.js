@@ -22,7 +22,7 @@ async function main() {
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true}));
-app.use()
+app.use(methodOverride("_method"));
 
 app.get("/", (req, res) => {
     res.send("Hi i'm root");

@@ -10,3 +10,7 @@ body {
     color: #2A7E19;
     font-size: 2rem;
 }
+
+.nav-link {
+    color: #222222 !important;
+}

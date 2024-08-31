@@ -4,6 +4,7 @@ body {
 
 .navbar {
     height: 5rem;
+    background-color: white;
 }
 
 .fa-tree {

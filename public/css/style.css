@@ -92,3 +92,7 @@ body {
     background-color: #fe424b !important;
     border: none !;
 }
+
+.show-img {
+    height: 30vh;
+}

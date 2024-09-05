@@ -78,10 +78,6 @@ app.delete("/listings/:id", async (req, res) => {
     res.redirect("/listings");
 });
 
-app.get();
-
 app.listen(8080, () => {
     console.log("server is listening to the port 8080");
 });
-
-app.get("/");

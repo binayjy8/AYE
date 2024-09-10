@@ -34,7 +34,7 @@ app.get("/", (req, res) => {
 
 //Middleware
 app.use("",(err, req, res, next) => {
-    res.send("-----E");
+    res.send("-----ERR");
 });
 
 //Index Route

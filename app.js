@@ -32,11 +32,7 @@ app.get("/", (req, res) => {
 });
 
 
-//Middleware
-app.use("",(err, req, res, next) => {
-    res.send("-----ERROR-----");
-    next();
-});
+
 
 //Index Route
 app.get("/listings", async (req, res) => {

@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 
 //middleware
 app.use((err, req, res, next) => {
-    let { status = 500, message = ""} = err;
+    let { status = 500, message = "SOME"} = err;
 });
 //Index Route
 app.get("/listings", async (req, res) => {

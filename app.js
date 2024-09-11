@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
     res.send("Hi i'm root");
 });
 
-
+//middleware
 //Index Route
 app.get("/listings", async (req, res) => {
     const allListings = await Listing.find({});

@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 });
 
 //middleware
-app.use();
+app.use((err));
 //Index Route
 app.get("/listings", async (req, res) => {
     const allListings = await Listing.find({});

@@ -36,7 +36,7 @@ app.use((err, req, res, next) => {
     let { status = 500, message = "SOME ERROR--"} = err;
 });
 app.use((err, req, res, next) => {
-    let { status = 500, message} = err;
+    let { status = 500, message = ""} = err;
 });
 //Index Route
 app.get("/listings", async (req, res) => {

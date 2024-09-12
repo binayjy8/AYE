@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
 app.use((err, req, res, next) => {
     let { status = 500, message = "SOME ERROR--"} = err;
 });
-app
+app.use();
 //Index Route
 app.get("/listings", async (req, res) => {
     const allListings = await Listing.find({});

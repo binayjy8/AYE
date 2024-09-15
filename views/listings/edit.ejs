@@ -7,7 +7,12 @@
     <form method="POST" action="/listings/<%= listing._id %>?_method=PUT">
         <div class="mb-3">
             <lable for="title" class="form-lable">Title</lable>
-            <input name="listing[title]" value="<%= listing.title %>" type="text" class="form-control">
+            <input name="listing[title]" 
+            value="<%= listing.title %>" 
+            type="text" 
+            class="form-control"
+            required
+            >
         </div>
         
         <div class="mb-3">

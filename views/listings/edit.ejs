@@ -17,7 +17,10 @@
         
         <div class="mb-3">
             <lable for="description" class="form-lable">Description</lable>
-            <textarea name="listing[description]" class="form-control"><%= listing.description %></textarea>
+            <textarea name="listing[description]" 
+            class="form-control"
+            required
+            ><%= listing.description %></textarea>
         </div>
         
         <div class="mb-3">

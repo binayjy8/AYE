@@ -86,6 +86,7 @@ app.delete("/listings/:id", wrapAsync(async (req, res) => {
 }));
 
 app.all("*", (req, res, next) => {
+    res.render("error.ejs");
     next(new ExpressError(404, "page not found!"));
 });
 

@@ -87,7 +87,7 @@ app.delete("/listings/:id", wrapAsync(async (req, res) => {
 
 app.use((err, req, res, next) => {
     let {statusCode, message} = err;
-    res.status
+    res.status();
 });
 
 app.all("*", (req, res, next) => {

@@ -34,6 +34,15 @@ app.get("/", (req, res) => {
     res.send("Hi i'm root");
 });
 
+const validateListing = (req, res, next) => {
+    let { error } = listingSchema.validate(req.body);
+    if(error) {
+        throw new ExpressError(400, result.error);
+    } else {
+        next();
+    }
+};
+
 //Index Route
 app.get("/listings", wrapAsync(async (req, res) => {
     const allListings = await Listing.find({});
@@ -54,9 +63,6 @@ app.get("/listings/:id", wrapAsync(async(req, res) => {
 
 //Create Route
 app.post("/listings", wrapAsync(async (req, res, next) => {
-    if(!req.body.listing) {
-        throw new ExpressError(400, "send valid data");
-    }
     const newListing = new Listing(req.body.listing);
     await newListing.save();
     res.redirect("/listings");

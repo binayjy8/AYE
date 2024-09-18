@@ -1,3 +1,5 @@
 const Joi = require("joi");
 
-const listings = Joi.object({});
+const listings = Joi.object({
+    listing : Joi.object().required()
+});

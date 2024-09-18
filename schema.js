@@ -1,5 +1,7 @@
 const Joi = require("joi");
 
 const listings = Joi.object({
-    listing : Joi.object().required()
+    listing : Joi.object({
+        title : Joi.string().required()
+    }).required()
 });

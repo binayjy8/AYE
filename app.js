@@ -93,7 +93,7 @@ app.delete("/listings/:id", wrapAsync(async (req, res) => {
 }));
 
 app.use("/kl", (req, res, next) => {
-    next();
+    next(new ExpressError);
 });
 
 app.all("*", (req, res, next) => {

@@ -92,7 +92,7 @@ app.delete("/listings/:id", wrapAsync(async (req, res) => {
     res.redirect("/listings");
 }));
 
-app.use();
+app.use("/kl");
 
 app.all("*", (req, res, next) => {
     next(new ExpressError(404, "page not found!"));

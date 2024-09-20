@@ -4,6 +4,6 @@ const Schema = mongoose.Schema;
 const reviewSchema = new Schema({
     comments: String,
     reting: {
-        ty
+        type
     }
 });

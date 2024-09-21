@@ -9,5 +9,7 @@ const reviewSchema = new Schema({
         min: 1,
         max: 5,
     },
-    created
+    createdAt: {
+        type: Date,
+    }
 });

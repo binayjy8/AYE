@@ -19,7 +19,7 @@ const listingSchema = new Schema({
     country: String,
     reviews: [
         {
-            type
+            type: Schema.Types.ObjectId
         }
     ]
 });

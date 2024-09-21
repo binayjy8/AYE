@@ -6,6 +6,6 @@ const reviewSchema = new Schema({
     comments: String,
     reting: {
         type: Number,
-        mi
+        min: 1,
     }
 });

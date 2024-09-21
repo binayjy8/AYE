@@ -7,6 +7,7 @@ const reviewSchema = new Schema({
     reting: {
         type: Number,
         min: 1,
-        max
-    }
+        max: 5,
+    },
+    cre
 });

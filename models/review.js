@@ -11,6 +11,6 @@ const reviewSchema = new Schema({
     },
     createdAt: {
         type: Date,
-        defalut
-    }
+        defalut: Date.now(),
+    },
 });

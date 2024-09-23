@@ -102,6 +102,8 @@ app.post("/listings/:id/reviews", async (req, res) => {
 
     await newReview.save();
     await listing.save();
+
+    res.send("new review send");
 });
 
 app.all("*", (req, res, next) => {

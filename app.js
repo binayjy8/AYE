@@ -97,6 +97,11 @@ app.delete("/listings/:id", wrapAsync(async (req, res) => {
 app.post("/listings/:id/reviews", async (req, res) => {
     let listing = await Listing.findById(req.params.id);
     let newReview = new Review(req.body.review);
+
+    listing.reviews.push(newReview);
+
+    await newReview.save();
+    await listing.save();
 });
 
 app.all("*", (req, res, next) => {

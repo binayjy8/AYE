@@ -94,7 +94,9 @@ app.delete("/listings/:id", wrapAsync(async (req, res) => {
 }));
 
 //Review Route
-app.post("/listings/:id/reviews", async (req, res) => {});
+app.post("/listings/:id/reviews", async (req, res) => {
+    let listing = await Listing.findById(req.params.id);
+});
 
 app.all("*", (req, res, next) => {
     next(new ExpressError(404, "page not found!"));

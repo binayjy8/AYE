@@ -20,7 +20,7 @@ router.get("/listings/:id", wrapAsync(async(req, res) => {
 }));
 
 //Create Route
-app.post("/listings", validateListing,
+router.post("/listings", validateListing,
      wrapAsync(async (req, res, next) => {
     const newListing = new Listing(req.body.listing);
     await newListing.save();

@@ -20,7 +20,7 @@ router.get("/:id", wrapAsync(async(req, res) => {
 }));
 
 //Create Route
-router.post("/listings", validateListing,
+router.post("/", validateListing,
      wrapAsync(async (req, res, next) => {
     const newListing = new Listing(req.body.listing);
     await newListing.save();
@@ -28,7 +28,7 @@ router.post("/listings", validateListing,
 }));
 
 //Edit Route
-router.get("/listings/:id/edit", wrapAsync(async (req, res) => {
+router.get("/:id/edit", wrapAsync(async (req, res) => {
     let { id } = req.params;
     const listing = await Listing.findById(id);
     res.render("listings/edit.ejs", { listing });

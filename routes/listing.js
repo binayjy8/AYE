@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 //Index Route
-router.get("/listings", wrapAsync(async (req, res) => {
+router.get("/", wrapAsync(async (req, res) => {
     const allListings = await Listing.find({});
     res.render("listings/index.ejs", { allListings });
 }));

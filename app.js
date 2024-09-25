@@ -37,6 +37,8 @@ app.get("/", (req, res) => {
     res.send("Hi i'm root");
 });
 
+app.use("/listings", listings);
+
 //Review Route
 app.post("/listings/:id/reviews",validateReview,wrapAsync(async (req, res) => {
     let listing = await Listing.findById(req.params.id);

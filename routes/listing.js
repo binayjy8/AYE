@@ -35,7 +35,7 @@ router.get("/:id/edit", wrapAsync(async (req, res) => {
 }));
 
 //Update Route
-router.put("/listings/:id", validateListing, 
+router.put("/:id", validateListing, 
     wrapAsync(async (req, res) => {
     let { id } = req.params;
     await Listing.findByIdAndUpdate(id, {...req.body.listing});

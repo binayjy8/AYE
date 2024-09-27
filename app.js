@@ -48,7 +48,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/listings", listings);
-app.use();
+app.use("/listings/:id/reviews");
 
 
 const validateListing = (req, res, next) => {

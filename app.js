@@ -48,8 +48,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/listings", listings);
-app.use
-
+app.use()
 
 
 const validateListing = (req, res, next) => {

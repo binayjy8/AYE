@@ -17,7 +17,7 @@ const validateReview = (req, res, next) => {
 };
 
 //Review Route
-app.post("/",validateReview,wrapAsync(async (req, res) => {
+router.post("/",validateReview,wrapAsync(async (req, res) => {
     let listing = await Listing.findById(req.params.id);
     let newReview = new Review(req.body.reviews);
 
@@ -28,3 +28,5 @@ app.post("/",validateReview,wrapAsync(async (req, res) => {
 
     res.redirect(`/listings/${listing._id}`);
 }));
+
+module.exports = router;

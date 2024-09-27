@@ -13,7 +13,7 @@ const Review = require("./models/review.js");
 const MONGO_URL = "mongodb://127.0.0.1:27017/traveling";
 
 const listings = require("./routes/listing.js");
-const reviews = 
+const reviews = require("./routes/review.js")
 
 main()
     .then(() => {

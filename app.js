@@ -10,10 +10,10 @@ const ExpressError = require("./utils/ExpressError.js");
 const { listingSchema, reviewSchema } = require("./schema.js");
 const Review = require("./models/review.js");
 
-const MONGO_URL = "mongodb://127.0.0.1:27017/traveling";
-
 const listings = require("./routes/listing.js");
 const reviews = require("./routes/review.js");
+
+const MONGO_URL = "mongodb://127.0.0.1:27017/traveling";
 
 main()
     .then(() => {
@@ -34,15 +34,7 @@ app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
-const validateReview = (req, res, next) => {
-    let { error } = reviewSchema.validate(req.body);
-    if(error) {
-        let errMsg = error.details.map((el) => el.message).join(",");
-        throw new ExpressError(400, error);
-    } else {
-        next();
-    }
-};
+
 
 app.get("/", (req, res) => {
     res.send("Hi i'm root");

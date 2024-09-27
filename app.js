@@ -48,7 +48,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/listings", listings);
-app.us
+app.use
 
 
 

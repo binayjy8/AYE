@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 //Review Route
-app.post("/listings/:id/reviews",validateReview,wrapAsync(async (req, res) => {
+app.post("/",validateReview,wrapAsync(async (req, res) => {
     let listing = await Listing.findById(req.params.id);
     let newReview = new Review(req.body.reviews);
 

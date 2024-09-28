@@ -18,7 +18,7 @@ const validateReview = (req, res, next) => {
 
 //Review Route
 router.post("/",validateReview,wrapAsync(async (req, res) => {
-    con
+    cons
     let listing = await Listing.findById(req.params.id);
     let newReview = new Review(req.body.reviews);
 

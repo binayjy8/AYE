@@ -1,5 +1,5 @@
 const express = require("express");
-const router = express.Router({ mergePa});
+const router = express.Router({ mergePara});
 const wrapAsync = require("../utils/wrapAsync.js");
 const ExpressError = require("../utils/ExpressError.js");
 const { reviewSchema } = require("../schema.js");

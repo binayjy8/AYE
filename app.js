@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
 
 app.use("/listings", listings);
 app.use("/listings/:id/reviews", reviews);
-app.us
+app.use
 
 
 app.all("*", (req, res, next) => {

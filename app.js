@@ -37,7 +37,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/listing", (req, res) => {
-    res.send
+    res.send();
 });
 
 app.use("/listings", listings);

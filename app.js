@@ -37,7 +37,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/listing", (req, res) => {
-    res.
+    res.se
 });
 
 app.use("/listings", listings);

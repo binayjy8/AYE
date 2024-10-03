@@ -43,7 +43,7 @@ app.all("*", (req, res, next) => {
     next(new ExpressError(404, "page not found!"));
 });
 
-app.use(err, req, res);
+app.use(err, req, res, n);
 
 app.use((err, req, res, next) => {
     let {statusCode=500, message="something went wrong!"} = err;

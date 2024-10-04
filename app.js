@@ -50,7 +50,7 @@ app.use((err, req, res, next) => {
 });
 
 app.get((res, req, next) => {
-    cons
+    conso
 });
 
 app.listen(8080, () => {

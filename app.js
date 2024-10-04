@@ -50,7 +50,7 @@ app.use((err, req, res, next) => {
 });
 
 app.get((res, req, next) => {
-    c
+    co
 });
 
 app.listen(8080, () => {

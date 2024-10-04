@@ -50,7 +50,7 @@ app.use((err, req, res, next) => {
 });
 
 app.get((res, req, next) => {
-    console.log();
+    console.log("h");
 });
 
 app.listen(8080, () => {

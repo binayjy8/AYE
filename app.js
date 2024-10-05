@@ -32,6 +32,12 @@ app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
+const sessaionOptions = {
+    secret: "secretcode",
+    resave: false,
+    saveUninitialized: true
+};
+
 app.get("/", (req, res) => {
     res.send("Hi i'm root");
 });

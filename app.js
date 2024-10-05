@@ -35,8 +35,10 @@ app.use(express.static(path.join(__dirname, "/public")));
 const sessaionOptions = {
     secret: "secretcode",
     resave: false,
-    saveUninitialized: true
+    saveUninitialized: true,
 };
+
+app.use(session(sessaionOptions));
 
 app.get("/", (req, res) => {
     res.send("Hi i'm root");

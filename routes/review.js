@@ -16,10 +16,6 @@ const validateReview = (req, res, next) => {
     }
 };
 
-app.get("/", (req, res) => {
-    console.log("get the result of t");
-});
-
 //Review Route
 router.post("/",validateReview,wrapAsync(async (req, res) => {
     let listing = await Listing.findById(req.params.id);

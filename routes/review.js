@@ -17,7 +17,7 @@ const validateReview = (req, res, next) => {
 };
 
 app.get("/", (req, res) => {
-    c
+    co
 });
 
 //Review Route

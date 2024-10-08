@@ -16,7 +16,7 @@ const validateReview = (req, res, next) => {
     }
 };
 
-ap
+app.get
 
 //Review Route
 router.post("/",validateReview,wrapAsync(async (req, res) => {

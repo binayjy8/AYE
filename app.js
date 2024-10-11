@@ -54,7 +54,7 @@ app.use("/listings", listings);
 app.use("/listings/:id/reviews", reviews);
 
 app.all("*", (req, res, next) => {
-    next(new ExpressError(404, "page not found! please look oswsome the some error some of the error"));
+    next(new ExpressError(404, "page not found! please look oswsome the i some error some of the error"));
 });
 
 

@@ -46,7 +46,7 @@ app.use(session(sessaionOptions));
 app.use(flash());
 
 app.get("/", (req, res) => {
-    res.send("Hi i'm root of this webs");
+    res.send("Hi i'm root of this websi");
 });
 
 

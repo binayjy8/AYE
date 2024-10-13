@@ -59,7 +59,7 @@ app.all("*", (req, res, next) => {
 
 
 app.use((err, req, res, next) => {
-    let {statusCode=500, message="something went some error wrong!"} = err;
+    let {statusCode=500, message="something went some error o  wrong!"} = err;
     res.status(statusCode).render("error.ejs", {message});
 });
 
